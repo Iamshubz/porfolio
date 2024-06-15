@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Kayande's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script></head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="Screenshot_2024-06-15_153549-removebg-preview.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <a href="about.html">About Us</a>                    
+                    <li><a href="#education" target="_blank">Education</a></li>
+                    <li><a href="#certifications" target="_blank">Certifications</a></li>
+                    <li><a href="#photos" target="_blank">Photos</a></li>
+                    <a href="contact.html">Contact me</a>                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+      <!-- This section showcases the user's profile information -->
+      <span class="welcome-message-bold">
+        <!-- Display the user's greeting message -->
+          <span id="typing-text">Hi, I'm Shubhz:</span>
+        </span>        <br>
+        <!-- This span will display the typing animation -->
+        <span id="typing-animation"></span>
+      </span>
+      <!-- Display the user's role and expertise -->
+      <p>Coordinator Google DSC MIT-A | IITD_Ambassador | GSSoC'24</p>
+      <!-- Links to the user's LinkedIn profile and CV -->
+      <a href="https://www.linkedin.com/in/shubham-kayande-5a4585249/" target="" class="button">Get in Touch</a>
+      <a href="Profile.pdf" download="Profie.pdf" class="button">Download CV</a>
+      <!-- Display the user's profile picture -->
+  <!--  <img src="profile.jpeg" alt="Shubham Kayande" class="profile-pic-large"> -->
+  <div class="profile-pic-container">
+    <img src="profile.png" class="profile-pic-large" alt="Your Profile Picture">
+  </div>
+</section>
+    
+    <script>
+      // Get the elements for the typing text and animation
+      const typingText = document.getElementById("typing-text");
+      const typingAnimation = document.getElementById("typing-animation");
+      
+      // Array of texts to type out
+      const textToType = [" UI/Ux Designer", "Web Developer", "Cloud Security"];
+      let currentTextIndex = 0;
+      let currentCharIndex = 0;
+    
+      // Function to type out the text
+      function typeText() {
+        // If the current character index is less than the length of the current text
+        if (currentCharIndex < textToType[currentTextIndex].length) {
+          // Add the current character to the typing animation
+          typingAnimation.textContent += textToType[currentTextIndex][currentCharIndex];
+          currentCharIndex++;
+          // Call the typeText function again after a short delay
+          setTimeout(typeText, 130);
+        } else {
+          // Wait for a short delay before typing the next text
+          setTimeout(function() {
+            // Clear the typing animation text
+            typingAnimation.textContent = "";
+            // Move to the next text in the array
+            currentTextIndex = (currentTextIndex + 1) % textToType.length;
+            currentCharIndex = 0;
+            // Call the typeText function again
+            typeText();
+          }, 1000);
+        }
+      }
+    
+      // Start the typing animation
+      typeText();
+    </script>
+    
+    <style>
+      /* Style the typing animation text */
+      #typing-animation {
+        font-weight: bold;
+        color: #333; /* adjust the color to match your design */
+      }
+    </style>
+    <section id="About Me">       
+        <h2>About Me</h2>
+    <div class="profile-section">
+        <div class="profile-pic">
+          <img src="image.jpeg" alt="Shubham Kayande">
+        </div>
+        <h2 class="name-typing">
+          <span class="name-wrapper">
+            <span class="name">Shubham Kayande</span>
+          </span>
+        </h2>
+      </div>
+   
+            <p>As a Coordinator at GDSC MIT-A, I have successfully managed multiple events, such as the Cloud Jam Session, tech talk sessions, and more. I also won the Eco-Tech GFG hackathon. I have contributed to the development of several web applications using HTML, CSS, Python, and C, and have gained valuable skills in web design and development.
+
+                In addition, I am a Campus Ambassador at Rendezvous IITDelhi, where I represent and promote one of the largest cultural festivals in India. I engage with students, sponsors, and media to create awareness and excitement. I have also completed a two-month internship as a UI Designer at CodSoft, where I designed user-friendly and responsive interfaces for various clients, applying the principles of UI/UX design to create engaging and intuitive user experiences.
+                
+                Furthermore, I am pursuing a Bachelor of Technology in Computer Science Engineering at Maharashtra Institute of Technology Aurangabad, where I have acquired a strong foundation in programming, data structures, algorithms, and cloud security. I have also earned certifications in Geo-Data Sharing and Cyber Security, Web Design & Development, and Learning the OWASP Top 10, which demonstrate my interest and proficiency in these domains.
+                
+                My goal is to leverage my skills and knowledge to create innovative and impactful solutions that can solve real-world problems and improve people's lives. I am always eager to learn new technologies and tools and to collaborate with other professionals and enthusiasts who share my vision and passion. I believe that with hard work, creativity, and teamwork, anything is possible.
+                
+                Hobbies
+            <p>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                  <p><strong>Coordinator</strong> - GDSC MIT-A</p>
+                  <p>October 2023 - Present</p>
+                </div>
+                <div class="experience-item">
+                  <p><strong>Campus Ambassador</strong> - Rendezvous IITDelhi</p>
+                  <p>September 2023 - Present</p>
+                </div>
+
+<div class="experience-item">
+  <p><strong>UI Designer</strong> - CodSoft</p>
+  <p>October 2023 - November 2023</p>
+  <button class="view-proof-btn">View Projects<i class="fas fa-image"></i></button>
+  <ul>
+    <li><a href="https://www.figma.com/proto/bNYlutCbL81UkotXNEZtTN/Flight-Booking-App-GDSC?node-id=4-23&starting-point-node-id=4%3A23" target="_blank">Project 1</a></li>
+    <li><a href="https://www.figma.com/proto/9whamp8wuZ4XYAOJPyr5Sc/Signupflow-Codsoft?node-id=203-77&starting-point-node-id=203%3A77" target="_blank">Project 2</a></li>
+    <li><a href="https://www.figma.com/proto/9whamp8wuZ4XYAOJPyr5Sc/Signupflow-Codsoft?node-id=203-77&t=ptVMmu9thyllKftO-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=203%3A77" target="_blank">Project 3</a></li>
+    <li><a href="https://www.figma.com/proto/RLKOoNLnOFf266IoVwQPZ7/Untitled?node-id=51-23&t=Z6005xyGxAe3y3u1-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank">Project 4</a></li>
+</ul>
+</div>
+
+
+                <div class="experience-item">
+                  <p><strong>Contributor</strong> - GirlScript Summer of Code</p>
+                  <p>May 2024 - Present</p>
+                </div>
+              <div class="experience-item">
+                <p><strong>Appreciator </strong> -India Book of Record</p>
+                <p>October 2022</p>
+              </div>
+            </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Technology (BTech)</strong> in Computer Science Engineering</p>
+            <p>Maharashtra Institute of Technology Aurangabad</p>
+            <p>August 2023 - Present</p>
+            
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul class="cert-list">
+                <li><a href="isro.jpg" data-lightbox="certificates">
+                    Geo-DataSharing & Cybersecurity By ISRO</li>
+                </a>
+              </li>
+              <li><a href="osec.jpg" data-lightbox="certificates">
+                Operating Systems and Security By Microsoft</li>
+            </a>
+          </li>
+          <li><a href="prepcos.jpg" data-lightbox="certificates">
+            Professional Cloud Security Engineer Journey By Google Cloud</li>
+        </a>
+      </li>
+          <li><a href="it&cybersecurity.jpg" data-lightbox="certificates">
+            Introduction IT and Cyber Security</li>
+        </a>
+      </li>      
+    <li><a href="" data-lightbox="certificates">
+        Web Design & Development - NSDC International Limited</li>
+  </a>
+</li>
+<li><a href="" data-lightbox="certificates">
+    Learning the OWASP Top 10 - LinkedIn Learning</li>
+</a>
+</li>
+<li><a href="python.jpg" data-lightbox="certificates">
+    Python By Geeks fo Geeks</li>
+</a>
+</li>
+<li><a href="" data-lightbox="certificates">
+    HTML</li>
+</a>
+</li>
+<li><a href="AI.jpg" data-lightbox="certificates">
+    artificial intelligence</li>
+</a>
+</li>
+<li><a href="cloudboot.jpg" data-lightbox="certificates">
+    Google Clood BootCamp</li>
+</a>
+</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li>Cloud Security</li>
+                <li>Web Development</li>
+                <li>UI/UX Design</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>Front-End Development</li>
+                <li>HTML</li>
+                <li>Cascading Style Sheets (CSS)</li>
+                <li>Java</li>
+                <li>Communication</li>
+            </ul>
+        </section>
+
+        <section id="photos">
+            <h2>My Photos</h2>
+            <div class="gallery">
+              <a href="image.jpeg" data-lightbox="mygallery">
+                <img src="image.jpeg" alt="Photo 1">
+              </a>
+              <a href="photo1.jpg" data-lightbox="mygallery">
+                <img src="photo1.jpg" alt="Photo 2">
+              </a>
+              <a href="photo2.jpg" data-lightbox="mygallery">
+                <img src="photo2.jpg" alt="Photo 3" style="width: 300px; height: 200px;"> 
+                <img src="photo3.jpg" alt="Photo 3" style="width: 300px; height: 200px;"> 
+              </a>
+              <a href="photo4.jpg" data-lightbox="mygallery">
+                <img src="photo4.jpg" alt="Photo 3" style="width: 300px; height: 200px;"> 
+              </a>
+              <a href="photo5.jpg" data-lightbox="mygallery">
+                <img src="photo5.jpg" alt="Photo 3" style="width: 300px; height: 200px;"> 
+              </a>
+             
+            </div>
+          </section>
+   
+          <script src="lightbox.js"></script>
+          
+          
+          <footer>
+            <p>&copy; 2024 Shubham Kayande. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
