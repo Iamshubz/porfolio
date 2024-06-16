@@ -11,6 +11,13 @@ body {
                 0px 10px 10px rgba(30, 103, 228, 0.2), /* bottom side */
                 0px -10px 10px rgba(21, 118, 246, 0.2); /* top side */
     padding: 50px;
+    /* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  .gallery img {
+    width: 50px; /* reduced width for mobile devices */
+    height: 50px; /* reduced height for mobile devices */
+  }
+}
 }
 .container {
     width: 100%;
