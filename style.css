@@ -1,11 +1,16 @@
 body {
-    font-size: 16px;
+
     font-family: 'Poppins', sans-serif;
-    margin: 20px;
+    margin: auto;
     padding: auto;
-    background-color: #f8f8f8;
+    background-color: #b4b4b4;
     color: #020202;
-    
+    background: linear-gradient(to bottom, #f0f0f0, #ccc); /* gradient background */
+    box-shadow: 10px 10px 10px rgba(19, 152, 235, 0.2), /* right side */
+                -10px 10px 10px rgba(122, 12, 146, 0.2), /* left side */
+                0px 10px 10px rgba(30, 103, 228, 0.2), /* bottom side */
+                0px -10px 10px rgba(21, 118, 246, 0.2); /* top side */
+    padding: 50px;
     /* Added media query for mobile devices */
 @media only screen and (max-width: 480px) {
     .gallery img {
@@ -22,7 +27,7 @@ body {
 }
 
 .welcome-message-bold span {
-    font-size: 2rem; /* increase font size to 36 pixels */
+    font-size: 40px; /* increase font size to 36 pixels */
     font-weight: bold; /* make the text bold */
     background: linear-gradient(to right, blue, rgb(246, 32, 150)); /* blue to orange (saffron) gradient */
     -webkit-background-clip: text;
@@ -57,7 +62,7 @@ header a {
     color: #292424;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 20px;
     text-align: right;
     padding: 10px 0;
 }
@@ -119,11 +124,11 @@ header nav {
 }
 
 #showcase h1 {
-    font-size: 3rem; ;
+    font-size: 60px;
     margin-top: 25;
 }
 #showcase p {
-    font-size: 1.5rem;;
+    font-size: 20px;
 }
 
 section {
@@ -140,10 +145,10 @@ section {
     padding: 50px;
 }
 .profile-pic-large {
-    width: 50%; /* adjust width for mobile devices */
-    height: 50%; /* adjust height for mobile devices */
+    width: 200px; /* adjust width for mobile devices */
+    height: 200px; /* adjust height for mobile devices */
     border-radius: 25px;
-    margin-left: 20px;
+    margin-left: 50px;
     float: right;
     margin-top: 0%;
     transform: translateY(-50%);
@@ -251,9 +256,9 @@ footer {
     
 }
 .photos img {
-    width: 25%; /* updated from 30% */
-    height: 25%;
-    
+    width: 30%;
+    border-radius: 10px;
+    margin: 10px;
 }
 .profile-section {
     display: flex;
@@ -320,8 +325,8 @@ footer {
     }
     
     .gallery img {
-        width: 25%;;
-        height: 25%;
+        width: 100px;
+        height: 100px;
         object-fit: cover;
         border-radius: 10px;
         cursor: pointer;
@@ -330,8 +335,8 @@ footer {
     /* Added media query for mobile devices */
     @media only screen and (max-width: 480px) {
       .gallery img {
-        width: 25%; /* updated from 100px */
-    height: 25%; /* reduced height for mobile devices */
+        width: 50px; /* reduced width for mobile devices */
+        height: 50px; /* reduced height for mobile devices */
       }
     }
     .lightbox {
@@ -366,13 +371,4 @@ footer {
     
     .close:hover {
         color: #ccc;
-    
-    }
-    section {
-        padding: 20px; /* updated from 30px */
-        margin: 20px 0; /* updated from 30px 0 */
-    }
-    
-    footer {
-        padding-bottom: 20px; /* updated from 30px 0 */
     }
