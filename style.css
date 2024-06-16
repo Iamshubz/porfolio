@@ -1,7 +1,8 @@
 body {
+
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     background-color: #b4b4b4;
     color: #020202;
     background: linear-gradient(to bottom, #f0f0f0, #ccc); /* gradient background */
@@ -12,7 +13,7 @@ body {
     padding: 50px;
 }
 .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
     
@@ -56,9 +57,17 @@ header a {
     text-transform: uppercase;
     font-size: 20px;
     text-align: right;
-    
-
+    padding: 10px 0;
 }
+
+/* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 5px 0; /* reduced padding for mobile devices */
+  }
+}
+
+
 header ul {
     padding: 0;
     list-style: none;
@@ -79,6 +88,14 @@ header nav {
     float: right;
     margin-top: 10px;
 }
+
+/* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  header nav {
+    float: none; /* remove float for mobile devices */
+    margin-top: 0; /* remove margin top for mobile devices */
+  }
+}
 #showcase {
     min-height: 380px;
     background: url('https://source.unsplash.com/1600x900/nature') no-repeat center center/cover;
@@ -88,13 +105,19 @@ header nav {
     padding-top: 100px;
 }
 #showcase {
-    background: linear-gradient(to bottom, #f0f0f0, #ccc); /* gradient background */
-    box-shadow: 10px 10px 10px rgba(19, 152, 235, 0.2), /* right side */
-                -10px 10px 10px rgba(122, 12, 146, 0.2), /* left side */
-                0px 10px 10px rgba(30, 103, 228, 0.2), /* bottom side */
-                0px -10px 10px rgba(21, 118, 246, 0.2); /* top side */
-    padding: 50px;
+    min-height: 380px;
+    background: url('https://source.unsplash.com/1600x900/nature') no-repeat center center/cover;
+    color: #131313;
+    text-align: left;
+    padding-top: 100px;
+}
 
+/* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  #showcase {
+    min-height: 200px; /* reduced min-height for mobile devices */
+    padding-top: 50px; /* reduced padding top for mobile devices */
+  }
 }
 
 #showcase h1 {
@@ -118,18 +141,26 @@ section {
                 0px -10px 10px rgba(21, 118, 246, 0.2); /* top side */
     padding: 50px;
 }
-
 .profile-pic-large {
-    width: 300px; /* adjust the width to your liking */
-    height: 300px; /* adjust the height to your liking */
-    border-radius: 25px; /* add a slight border radius */
-    margin-left: 50px; /* add some space between the button and the image */
-    float:right; /* make the image float to the right */
-    margin-top: 0%; /* center the image vertically */
-    transform: translateY(-50%); /* center the image vertically */
-    
-  
+    width: 200px; /* adjust width for mobile devices */
+    height: 200px; /* adjust height for mobile devices */
+    border-radius: 25px;
+    margin-left: 50px;
+    float: right;
+    margin-top: 0%;
+    transform: translateY(-50%);
 }
+
+/* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  .profile-pic-large {
+    width: 100px; /* reduced width for mobile devices */
+    height: 100px; /* reduced height for mobile devices */
+    margin-left: 20px; /* reduced margin left for mobile devices */
+  }
+}
+  
+
 footer {
     background: #333;
     color: #fff;
@@ -181,6 +212,14 @@ footer {
     border-radius: 5px;
     box-shadow: 0 9px #999;
     transition: background-color 0.3s ease;
+}
+
+/* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  .button {
+    padding: 5px 10px; /* reduced padding for mobile devices */
+    font-size: 14px; /* reduced font size for mobile devices */
+  }
 }
 .button:hover {
     background-color: #d73b16;
@@ -276,15 +315,10 @@ footer {
         
     }
     
-    
     .gallery {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    
-    .gallery a {
-        margin: 20px;
     }
     
     .gallery img {
@@ -295,6 +329,13 @@ footer {
         cursor: pointer;
     }
     
+    /* Added media query for mobile devices */
+    @media only screen and (max-width: 480px) {
+      .gallery img {
+        width: 50px; /* reduced width for mobile devices */
+        height: 50px; /* reduced height for mobile devices */
+      }
+    }
     .lightbox {
         position: fixed;
         top: 0;
