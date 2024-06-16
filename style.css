@@ -13,7 +13,7 @@ body {
     padding: 50px;
     /* Added media query for mobile devices */
 @media only screen and (max-width: 480px) {
-  .gallery img {
+body {
     width: 50px; /* reduced width for mobile devices */
     height: 50px; /* reduced height for mobile devices */
   }
@@ -23,6 +23,13 @@ body {
     width: 100%;
     margin: auto;
     overflow: hidden;
+    /* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+.container {
+    width: 50px; /* reduced width for mobile devices */
+    height: 50px; /* reduced height for mobile devices */
+  }
+}
     
 }
 
@@ -65,6 +72,13 @@ header a {
     font-size: 20px;
     text-align: right;
     padding: 10px 0;
+    /* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+header a {
+    width: 50px; /* reduced width for mobile devices */
+    height: 50px; /* reduced height for mobile devices */
+  }
+}
 }
 
 /* Added media query for mobile devices */
@@ -110,6 +124,13 @@ header nav {
     
     text-align:left;
     padding-top: 100px;
+    /* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+#showcase {
+    width: 50px; /* reduced width for mobile devices */
+    height: 50px; /* reduced height for mobile devices */
+  }
+}
 }
 #showcase {
     min-height: 380px;
@@ -147,6 +168,13 @@ section {
                 0px 10px 10px #a616fa33, /* bottom side */
                 0px -10px 10px rgba(21, 118, 246, 0.2); /* top side */
     padding: 50px;
+    /* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+section {
+    width: 50px; /* reduced width for mobile devices */
+    height: 50px; /* reduced height for mobile devices */
+  }
+}
 }
 .profile-pic-large {
     width: 200px; /* adjust width for mobile devices */
@@ -219,6 +247,13 @@ footer {
     border-radius: 5px;
     box-shadow: 0 9px #999;
     transition: background-color 0.3s ease;
+    /* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  .gallery img {
+    width: 50px; /* reduced width for mobile devices */
+    height: 50px; /* reduced height for mobile devices */
+  }
+}
 }
 
 /* Added media query for mobile devices */
@@ -230,6 +265,13 @@ footer {
 }
 .button:hover {
     background-color: #d73b16;
+    /* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+.button:hover {
+    width: 50px; /* reduced width for mobile devices */
+    height: 50px; /* reduced height for mobile devices */
+  }
+}
 }
 .button:active {
     background-color: #d73b16;
@@ -257,6 +299,13 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
+    /* Added media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  .gallery img {
+    width: 50px; /* reduced width for mobile devices */
+    height: 50px; /* reduced height for mobile devices */
+  }
+}
     
 }
 .photos img {
